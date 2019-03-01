@@ -9,8 +9,11 @@ def foundPi(number):
 
 beggining = f"{'i':<25}m(i)\n"
 
-print(beggining)
+def main():
+    print(beggining)
+    for i in range(1, 902, 100):
+        to_print = f"{i:<25}{foundPi(i)}"
+        print(to_print)
 
-for i in range(1, 902, 100):
-    to_print = f"{i:<25}{foundPi(i)}"
-    print(to_print)
+if __name__ == "__main__":
+    main()
