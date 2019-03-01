@@ -7,4 +7,8 @@ def convertMillis(millis):
 
 input = eval(input("Enter a number: "))
 
-print(convertMillis(input))
+def main():
+    print(convertMillis(input))
+
+if __name__ == "__main__":
+    main()
