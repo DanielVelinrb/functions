@@ -17,4 +17,8 @@ def isPalindrome(number):
 
 input = eval(input("Enter a number: "))
 
-print(isPalindrome(input))
+def main():
+    print(isPalindrome(input))
+
+if __name__ == "__main__":
+    main()
