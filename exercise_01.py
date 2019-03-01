@@ -11,5 +11,8 @@ def displayPattern(n):
 
 input = eval(input("Enter a number: "))
 
+def main():
+    print(displayPattern(input))
 
-print(displayPattern(input))
+if __name__ == "__main__":
+    main()
