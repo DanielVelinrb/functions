@@ -1,4 +1,4 @@
-def convertMillis(millis):
+def convert_millis(millis):
     to_use = (millis // 1000)
     hours = to_use // 3600
     to_use %=  3600
@@ -8,7 +8,8 @@ def convertMillis(millis):
 input = eval(input("Enter a number: "))
 
 def main():
-    print(convertMillis(input))
+    if __name__ == "__main__":
+        print(convert_millis(input))
 
-if __name__ == "__main__":
-    main()
+
+main()
