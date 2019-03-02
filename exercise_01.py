@@ -1,4 +1,4 @@
-def displayPattern(n):
+def display_pattern(n):
     n_to_print = ""
     total = ""
     for i in range(1, n + 1):
@@ -12,7 +12,8 @@ def displayPattern(n):
 input = eval(input("Enter a number: "))
 
 def main():
-    print(displayPattern(input))
+    if __name__ == "__main__":
+        print(display_pattern(input))
 
-if __name__ == "__main__":
-    main()
+
+main()
