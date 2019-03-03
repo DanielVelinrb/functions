@@ -16,7 +16,7 @@ def is_palindrome(number):
 
 def main():
     number = eval(input("Enter a number: "))
-    if __name__ == "__main__":  
-        print(is_palindrome(number))
+    print(is_palindrome(number))
 
-main()
+if __name__ == "__main__":  
+    main()
