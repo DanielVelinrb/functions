@@ -9,10 +9,9 @@ def display_pattern(n):
 
     return total
 
-
 def main():
-        number = eval(input("Enter a number: "))
-        print(display_pattern(number))
+    number = eval(input("Enter a number: "))
+    print(display_pattern(number))
 
 if __name__ == "__main__":
-        main()
+    main()
