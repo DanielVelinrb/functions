@@ -10,5 +10,6 @@ def main():
     number = eval(input("Enter a number: "))
     print(convert_millis(number))
 
+
 if __name__ == "__main__":
     main()
