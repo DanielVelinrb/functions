@@ -6,6 +6,7 @@ def reverse(number):
 
     return number
 
+
 def is_palindrome(number):
     n_to_check = int(reverse(number))
 
@@ -14,9 +15,11 @@ def is_palindrome(number):
     else:
         return "Sorry, it's not a palindrome."
 
+
 def main():
     number = eval(input("Enter a number: "))
     print(is_palindrome(number))
+
 
 if __name__ == "__main__":  
     main()
