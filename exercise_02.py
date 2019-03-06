@@ -4,7 +4,7 @@ def reverse(number):
     for i in range(1, len(n_list) + 1):
         number += n_list[-i]
 
-    return number
+    return int(number)
 
 
 def is_palindrome(number):
