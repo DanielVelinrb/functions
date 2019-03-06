@@ -5,7 +5,7 @@ def display_pattern(n):
         n_to_print = f"{i} {n_to_print}"
         space = "  " * (n - i)
 
-        total =  "{}\n{}{}".format(total, space, n_to_print)
+        total =  f"{total}\n{space}{n_to_print}"
 
     return total
 
