@@ -8,17 +8,17 @@ def reverse(number):
 
 
 def is_palindrome(number):
-    n_to_check = int(reverse(number))
+    n_to_check = reverse(number)
 
-    if n_to_check == int(number):
-        return "It's a palindrome"
-    else:
-        return "Sorry, it's not a palindrome."
+    return n_to_check == int(number)   
 
 
 def main():
     number = eval(input("Enter a number: "))
-    print(is_palindrome(number))
+    if is_palindrome(number) == True:
+        print("It's a palindrome")
+    else:
+        print("Sorry it's not a palindrome.")
 
 
 if __name__ == "__main__":  
