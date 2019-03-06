@@ -1,11 +1,9 @@
 def foot_to_meters(foot):
-    meter = foot * 0.305
-    return "{0:.3f}".format(meter)
+    return f"{foot * 0.305:.3f}"
 
 
 def meters_to_foot(meter):
-    foot = meter / 0.305
-    return "{0:.3f}".format(foot)
+    return f"{meter / 0.305:.3f}"
 
 
 def main():  
