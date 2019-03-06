@@ -1,4 +1,4 @@
-def display_pattern(n):
+def pyramid_of_numbers(n):
     n_to_print = ""
     total = ""
     for i in range(1, n + 1):
@@ -12,7 +12,7 @@ def display_pattern(n):
 
 def main():
     number = eval(input("Enter a number: "))
-    print(display_pattern(number))
+    print(pyramid_of_numbers(number))
 
 
 if __name__ == "__main__":
