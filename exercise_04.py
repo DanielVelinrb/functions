@@ -8,15 +8,16 @@ def found_pi(number):
     return f"{pi:.4f}"
 
 
-def pi_values_table(n):
-    print(f"{'i':<25}m(i)\n")
+def print_pi_values_table(n):
+    print(f"{'i':<25}m(i)")
+    to_print = ""
     for i in range(1, n + 1, 100):
-        to_print = f"{i:<25}{found_pi(i)}"
-        print(to_print)
-
+        to_print += f"\n{i:<25}{found_pi(i)}"
+        
+    return to_print
 
 def main():
-    return pi_values_table(901)
+    print(print_pi_values_table(901))
     
 
 if __name__ == "__main__":
