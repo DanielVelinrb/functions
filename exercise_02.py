@@ -10,12 +10,12 @@ def reverse(number):
 def is_palindrome(number):
     n_to_check = reverse(number)
 
-    return n_to_check == int(number)   
+    return n_to_check == number   
 
 
 def main():
     number = eval(input("Enter a number: "))
-    if is_palindrome(number) == True:
+    if is_palindrome(number):
         print("It's a palindrome")
     else:
         print("Sorry it's not a palindrome.")
