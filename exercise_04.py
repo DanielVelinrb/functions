@@ -1,4 +1,4 @@
-def found_pi(number):
+def find_pi(number):
     formula = 0
 
     for i in range(1, number + 1):
@@ -9,16 +9,17 @@ def found_pi(number):
 
 
 def print_pi_values_table(n):
-    print(f"{'i':<25}m(i)")
-    to_print = ""
+    table = ""
     for i in range(1, n + 1, 100):
-        to_print += f"\n{i:<25}{found_pi(i)}"
+        table += f"\n{i:<25}{find_pi(i)}"
         
-    return to_print
+    print(table)
+
 
 def main():
-    print(print_pi_values_table(901))
+    print(f"{'i':<25}m(i)")
+    print_pi_values_table(901)
     
-
+  
 if __name__ == "__main__":
     main()
