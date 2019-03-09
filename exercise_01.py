@@ -1,8 +1,10 @@
 def print_pyramid_of_numbers(n):
-    temp = ''
+    temp = ""
     for i in range(1, n + 1):
-        temp = f'{i:<4}' + temp
-        print(('    ' * (n - i)) + temp)
+        #sbn refers to the space between 
+        sbn = int(len(str(n))) + 1
+        temp = f'{i:<{sbn}}' + temp
+        print(("   " * (n - i)) + temp)
 
 
 def main():
