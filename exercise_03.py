@@ -1,23 +1,28 @@
-def foot_to_meters(foot):
-    return f"{foot * 0.305:.3f}"
+def feet_to_meters(feet):
+    return feet * 0.305
 
 
-def meters_to_foot(meter):
-    return f"{meter / 0.305:.3f}"
+def meters_to_feet(meters):
+    return meters / 0.305
 
 
 def print_table(n):
-    print(f"{'Feet':<10}{'Meter':<10}{'|':<10}{'Meter':<10}{'Feet':<10}")
-    for i in range(1, n + 1):
-        j = 20 + 5 * (i - 1)
-        table = f"{i:<10}{foot_to_meters(i):<10}{'|':<10}{j:<10}{meters_to_foot(j):<10}"
-        print(table)
-    return table
+    print(f"{'Feet':<10}{'Meter':<10}{'|':<6}{'Meter':<10}{'Feet':<10}")
+    foot_range = range(1, n + 1)
+    meter_range = range(20, 20 + 5 * (n - 1) + 1, 5)
+
+    for feet, meters in zip(foot_range, meter_range):
+        foot_str = f'{feet_to_meters(feet):.3f}'
+        meter_str = f'{meters_to_feet(meters):.3f}'
+
+        print(f"{feet:<10}{foot_str:<10}", end='')
+        print(f'{"|":<6}', end='')
+        print(f'{meters:<10}{meter_str:<10}')
 
 
-def main():  
+def main():
     print_table(10)
-            
+
 
 if __name__ == "__main__":
     main()
