@@ -1,9 +1,13 @@
 def convert_millis(millis):
-    to_use = (millis // 1000)
-    hours = to_use // 3600
-    to_use %=  3600
+    seconds = millis // 1000
+    hours = seconds // 3600
 
-    return f"{hours}:{to_use // 60}:{to_use % 60}"
+    seconds %= 3600
+    minutes = seconds // 60
+
+    seconds %= 60
+
+    return f"{hours}:{minutes}:{seconds}"
 
 
 def main():
